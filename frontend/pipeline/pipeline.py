@@ -1,7 +1,7 @@
 from time import sleep
 from loguru import logger
 
-logger.add("execution_logs.log", format = "{time} - {message}", level = "INFO", rotation="1 day")
+logger.add("../execution_logs.log", format = "{time} - {message}", level = "INFO", rotation="1 day")
 
 def primeira_atividade():
     logger.info("minha primeira atividade - Hello World")

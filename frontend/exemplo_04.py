@@ -6,7 +6,7 @@ import subprocess
 
 # Função para carregar os dados do arquivo CSV
 def load_data():
-    df = pd.read_csv("execution_logs.log")
+    df = pd.read_csv("../execution_logs.log")
     return df
 
 # Função para executar o script Python
