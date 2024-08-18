@@ -6,14 +6,14 @@ from datetime import datetime
 
 
 @dag(
-        dag_id= "minha_primeira_dag",
+        dag_id= "minha_terceira_dag",
         description="minha etl braba",
         schedule= "* * * * *",
         start_date=datetime(2024, 8, 17),
         catchup=False #backfill
 
 )
-def pipeline():
+def terceira_pipeline():
 
     @task
     def primeira_atividade():
@@ -45,4 +45,4 @@ def pipeline():
     t1.set_downstream([t2, t3])
     t3.set_downstream(t4)
 
-pipeline()
+terceira_pipeline()
